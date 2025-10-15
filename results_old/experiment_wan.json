@@ -1,0 +1,186 @@
+{
+  "scenarios": [
+    {
+      "config": {
+        "delay_ms": 0,
+        "jitter_ms": 0,
+        "label": "Baseline (LAN)"
+      },
+      "get_latency_ms": 1396.5283952919501,
+      "set_latency_ms": 0,
+      "full_snapshot": {
+        "latencies": {
+          "dht.rpc.get": {
+            "count": 7,
+            "total_time": 6.606045993976295,
+            "max_time": 4.99554502312094,
+            "min_time": 0.07576902862638235,
+            "avg_time": 0.9437208562823278,
+            "throughput_per_sec": 1.532937676376828
+          },
+          "rpc.latency.get": {
+            "count": 7,
+            "total_time": 9.77569876704365,
+            "max_time": 6.234880886040628,
+            "min_time": 0.30390091706067324,
+            "avg_time": 1.39652839529195,
+            "throughput_per_sec": 1.532937676376828
+          }
+        },
+        "counters": {
+          "dht.get.local_hits": 21,
+          "dht.get.remote_lookups": 14,
+          "dht.get.miss": 7,
+          "dht.rpc.get.success": 7,
+          "rpc.success": 7
+        },
+        "elapsed_seconds": 4.566395691013895
+      }
+    },
+    {
+      "config": {
+        "delay_ms": 5,
+        "jitter_ms": 2,
+        "label": "Light WAN (5ms)"
+      },
+      "get_latency_ms": 14393.685254617594,
+      "set_latency_ms": 0,
+      "full_snapshot": {
+        "latencies": {
+          "dht.rpc.get": {
+            "count": 8,
+            "total_time": 1.0466628009453416,
+            "max_time": 0.4111699527129531,
+            "min_time": 0.06866501644253731,
+            "avg_time": 0.1308328501181677,
+            "throughput_per_sec": 1.6265172707925766
+          },
+          "rpc.latency.get": {
+            "count": 8,
+            "total_time": 115.14948203694075,
+            "max_time": 23.443253012374043,
+            "min_time": 9.87236900255084,
+            "avg_time": 14.393685254617594,
+            "throughput_per_sec": 1.6265172707925766
+          }
+        },
+        "counters": {
+          "dht.get.local_hits": 22,
+          "dht.get.remote_lookups": 13,
+          "dht.rpc.get.success": 8,
+          "rpc.success": 8,
+          "dht.get.miss": 5
+        },
+        "elapsed_seconds": 4.9184845089912415
+      }
+    },
+    {
+      "config": {
+        "delay_ms": 10,
+        "jitter_ms": 3,
+        "label": "WAN (10ms)"
+      },
+      "get_latency_ms": 41316.9891301853,
+      "set_latency_ms": 53230.66149139777,
+      "full_snapshot": {
+        "latencies": {
+          "dht.rpc.get": {
+            "count": 6,
+            "total_time": 57.481474126689136,
+            "max_time": 56.260660057887435,
+            "min_time": 0.075745047070086,
+            "avg_time": 9.580245687781522,
+            "throughput_per_sec": 1.1479821594345143
+          },
+          "rpc.latency.get": {
+            "count": 6,
+            "total_time": 247.90193478111178,
+            "max_time": 77.51066703349352,
+            "min_time": 20.325853023678064,
+            "avg_time": 41.3169891301853,
+            "throughput_per_sec": 1.1479821594345143
+          },
+          "dht.rpc.set": {
+            "count": 2,
+            "total_time": 0.08233403787016869,
+            "max_time": 0.04344398621469736,
+            "min_time": 0.038890051655471325,
+            "avg_time": 0.04116701893508434,
+            "throughput_per_sec": 0.38266071981150473
+          },
+          "rpc.latency.set": {
+            "count": 2,
+            "total_time": 106.46132298279554,
+            "max_time": 60.41937996633351,
+            "min_time": 46.04194301646203,
+            "avg_time": 53.23066149139777,
+            "throughput_per_sec": 0.38266071981150473
+          }
+        },
+        "counters": {
+          "dht.get.local_hits": 20,
+          "dht.get.remote_lookups": 13,
+          "dht.get.miss": 7,
+          "dht.rpc.get.success": 6,
+          "rpc.success": 8,
+          "dht.rpc.set.success": 2
+        },
+        "elapsed_seconds": 5.2265620599500835
+      }
+    },
+    {
+      "config": {
+        "delay_ms": 20,
+        "jitter_ms": 5,
+        "label": "High latency (20ms)"
+      },
+      "get_latency_ms": 80255.10402512737,
+      "set_latency_ms": 62048.58339333441,
+      "full_snapshot": {
+        "latencies": {
+          "dht.rpc.get": {
+            "count": 8,
+            "total_time": 0.8425309788435698,
+            "max_time": 0.22749998606741428,
+            "min_time": 0.05970406346023083,
+            "avg_time": 0.10531637235544622,
+            "throughput_per_sec": 1.3067845187022415
+          },
+          "rpc.latency.get": {
+            "count": 8,
+            "total_time": 642.0408322010189,
+            "max_time": 160.98345106001943,
+            "min_time": 37.70378208719194,
+            "avg_time": 80.25510402512737,
+            "throughput_per_sec": 1.3067845187022415
+          },
+          "dht.rpc.set": {
+            "count": 8,
+            "total_time": 0.2721492201089859,
+            "max_time": 0.044988002628088,
+            "min_time": 0.02587004564702511,
+            "avg_time": 0.03401865251362324,
+            "throughput_per_sec": 1.3067845187022415
+          },
+          "rpc.latency.set": {
+            "count": 8,
+            "total_time": 496.3886671466753,
+            "max_time": 89.56153108738363,
+            "min_time": 30.865314998663962,
+            "avg_time": 62.04858339333441,
+            "throughput_per_sec": 1.3067845187022415
+          }
+        },
+        "counters": {
+          "dht.get.local_hits": 22,
+          "dht.get.remote_lookups": 10,
+          "dht.rpc.get.success": 8,
+          "rpc.success": 16,
+          "dht.rpc.set.success": 8,
+          "dht.get.miss": 2
+        },
+        "elapsed_seconds": 6.121896828059107
+      }
+    }
+  ]
+}

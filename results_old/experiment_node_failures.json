@@ -1,0 +1,147 @@
+{
+  "baseline": {
+    "success_count": 18,
+    "full_snapshot": {
+      "latencies": {
+        "dht.rpc.get": {
+          "count": 16,
+          "total_time": 13.07201967574656,
+          "max_time": 7.316100993193686,
+          "min_time": 0.07985194679349661,
+          "avg_time": 0.81700122973416,
+          "throughput_per_sec": 2.0817747134934663
+        },
+        "rpc.latency.get": {
+          "count": 16,
+          "total_time": 28.761918074451387,
+          "max_time": 8.0953489523381,
+          "min_time": 0.3453709650784731,
+          "avg_time": 1.7976198796532117,
+          "throughput_per_sec": 2.0817747134934663
+        },
+        "dht.rpc.set": {
+          "count": 2,
+          "total_time": 0.06553193088620901,
+          "max_time": 0.03817700780928135,
+          "min_time": 0.027354923076927662,
+          "avg_time": 0.032765965443104506,
+          "throughput_per_sec": 0.2602218391866833
+        },
+        "rpc.latency.set": {
+          "count": 2,
+          "total_time": 0.8508769096806645,
+          "max_time": 0.458278926089406,
+          "min_time": 0.3925979835912585,
+          "avg_time": 0.42543845484033227,
+          "throughput_per_sec": 0.2602218391866833
+        }
+      },
+      "counters": {
+        "dht.get.local_hits": 37,
+        "dht.get.remote_lookups": 32,
+        "dht.get.miss": 16,
+        "dht.rpc.get.success": 16,
+        "rpc.success": 18,
+        "dht.rpc.set.success": 2
+      },
+      "elapsed_seconds": 7.685749997966923
+    }
+  },
+  "during_failure": {
+    "success_count": 28,
+    "failure_count": 0,
+    "full_snapshot": {
+      "latencies": {
+        "dht.rpc.get": {
+          "count": 9,
+          "total_time": 0.9077568538486958,
+          "max_time": 0.25363394524902105,
+          "min_time": 0.03352295607328415,
+          "avg_time": 0.10086187264985508,
+          "throughput_per_sec": 8.339380349142077
+        },
+        "rpc.latency.get": {
+          "count": 9,
+          "total_time": 13.802256900817156,
+          "max_time": 10.014079045504332,
+          "min_time": 0.13195094652473927,
+          "avg_time": 1.533584100090795,
+          "throughput_per_sec": 8.339380349142077
+        },
+        "dht.rpc.set": {
+          "count": 19,
+          "total_time": 0.3805719316005707,
+          "max_time": 0.03292202018201351,
+          "min_time": 0.010005082003772259,
+          "avg_time": 0.02003010166318793,
+          "throughput_per_sec": 17.605358514855496
+        },
+        "rpc.latency.set": {
+          "count": 19,
+          "total_time": 9.023351944051683,
+          "max_time": 1.0241559939458966,
+          "min_time": 0.12041605077683926,
+          "avg_time": 0.4749132602132465,
+          "throughput_per_sec": 17.605358514855496
+        }
+      },
+      "counters": {
+        "dht.get.local_hits": 23,
+        "dht.get.remote_lookups": 13,
+        "dht.get.miss": 4,
+        "dht.rpc.get.success": 9,
+        "rpc.success": 28,
+        "dht.rpc.set.success": 19
+      },
+      "elapsed_seconds": 1.0792168750194833
+    }
+  },
+  "after_recovery": {
+    "success_count": 15,
+    "full_snapshot": {
+      "latencies": {
+        "dht.rpc.get": {
+          "count": 11,
+          "total_time": 1.2201291974633932,
+          "max_time": 0.4946360131725669,
+          "min_time": 0.04535901825875044,
+          "avg_time": 0.11092083613303574,
+          "throughput_per_sec": 9.80998284426917
+        },
+        "rpc.latency.get": {
+          "count": 11,
+          "total_time": 9.468993870541453,
+          "max_time": 4.1131440084427595,
+          "min_time": 0.21229800768196583,
+          "avg_time": 0.8608176245946776,
+          "throughput_per_sec": 9.80998284426917
+        },
+        "dht.rpc.set": {
+          "count": 4,
+          "total_time": 0.11171016376465559,
+          "max_time": 0.03290106542408466,
+          "min_time": 0.023192958906292915,
+          "avg_time": 0.027927540941163898,
+          "throughput_per_sec": 3.5672664888251524
+        },
+        "rpc.latency.set": {
+          "count": 4,
+          "total_time": 3.630987834185362,
+          "max_time": 1.6164849512279034,
+          "min_time": 0.49121188931167126,
+          "avg_time": 0.9077469585463405,
+          "throughput_per_sec": 3.5672664888251524
+        }
+      },
+      "counters": {
+        "dht.get.local_hits": 25,
+        "dht.get.remote_lookups": 13,
+        "dht.rpc.get.success": 11,
+        "rpc.success": 15,
+        "dht.get.miss": 2,
+        "dht.rpc.set.success": 4
+      },
+      "elapsed_seconds": 1.121306751971133
+    }
+  }
+}
