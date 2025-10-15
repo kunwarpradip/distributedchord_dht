@@ -49,7 +49,3 @@ python3 run_all_experiments.py --experiment 3  # Node Failures
 | Visualization | `experiments_summary.png` | `plots/` |
 
 ---
-
-## License
-
-See [LICENSE](LICENSE)
