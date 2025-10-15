@@ -35,22 +35,8 @@ python3 run_all_experiments.py --experiment 2  # WAN
 python3 run_all_experiments.py --experiment 3  # Node Failures
 ```
 
-**Generate plots:**
-```bash
-.venv/bin/python plot_all_experiments.py
-```
-
 ---
 
-## Setup
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install matplotlib
-```
-
----
 
 ## Results Location
 
@@ -61,13 +47,6 @@ pip install matplotlib
 | WAN Latency | `experiment_wan.json` | `results/` |
 | Node Failures | `experiment_node_failures.json` | `results/` |
 | Visualization | `experiments_summary.png` | `plots/` |
-
----
-
-## Documentation
-
-- `TECHNICAL_REPORT.md` - Concise summary of code changes
-- `MODIFICATIONS_REPORT.md` - Detailed modifications and analysis
 
 ---
 
